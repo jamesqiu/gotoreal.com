@@ -24,6 +24,12 @@
 			margin: 0px 0 20px 2%;
 			padding: 0px 4% 0 0;
 		}
+		h1,h2 {
+			font-family: Arial,微软雅黑;
+		}
+		.applink {
+			color: blue;
+		}
 		
 	</style>
 </head> 
@@ -31,26 +37,47 @@
 
 <div data-role="page">
 
-	<div data-role="header" data-theme="b">
-		<h1>goto REAL</h1>
-		<h2>提供快速高效的软件构建</h2>
+	<div data-role="header" data-theme="a">
+		<h1 style="font-size:24px">goto REAL</h1>
+		<h2 style="color:lightgray">提供快速高效的软件构建</h2>
 	</div><!-- /header -->
+
+	<div data-role="navbar" data-iconpos="top" data-inline="true">
+		<ul>
+			<li><a href="#" class="ui-btn-active"  data-icon="home">首 页</a></li>
+			<li><a href="http://dev.sencha.com/deploy/touch/examples/production/kitchensink/index.html#demo/video" target="_blank" data-icon="grid">其 他</a></li>
+			<li><a href="http://m.google.com" target="_blank" data-icon="search">搜 索</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	
 
 	<div data-role="content">
 		
 	  <div class="content-secondary">	
-		  <div><i>(defn <font color=green><b>gotoREAL</b></font> <br/> &nbsp; [idea requirement & others] REAL) </i></div>
-		<ol data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
-			<li data-role="list-divider">关于本站</li>
-			<li>提出需求</li>
-			<li>筛选需求</li>
-			<li><a href="/c/grade" target="_blank">快速实现Demo应用</a></li>
-			<li>进一步的工作 ……</li>
-		</ol>
+		<div><i>(defn <font color=green><b>gotoREAL</b></font> <br/> &nbsp; [idea requirement & others] REAL) </i></div>
+		<div data-role="collapsible" data-collapsed="false" data-theme="b" data-content-theme="c">
+			<h3>关于本站</h3>
+			<div data-role="collapsible-set">
+				<div data-role="collapsible"><h4>1、提出需求</h4>清晰明了地提出业务需求；</div>
+				<div data-role="collapsible"><h4>2、分析筛选需求</h4>确认需求能否快速实现；</div>
+				<div data-role="collapsible" data-collapsed="false" ><h4>3、快速实现Demo应用</h4>可供访问的应用实现：
+					<ul data-role="listview" data-inset="true" data-theme="d" style="margin:0px">
+						<li><a href="/c/grade" target="_blank" style="color:blue">上市公司综合评价</a></li>
+						<li><a href="/c/esp"   target="_blank" style="color:blue">企业安全生产标准化</a></li>
+					</ul>
+				</div>
+				<div data-role="collapsible"><h4>4、进一步的工作 ……</h4>联系方式：
+					<ul data-role="listview" data-inset="true" data-theme="d" style="margin:0px">
+						<li><a href="tel:62703119">电话</a></li>
+						<li><a href="mailto:jamesqiu@sina.com">邮件</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	  </div>
 
 	  <div class="content-primary">
-		  <nav>
+		<nav>
 		<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="e">
 			<li data-role="list-divider">技术文档</li>
 			<li><a href="http://qiujj.com/static/clojure-handbook.html" target="_blank" >原创：Clojure 编程语言中文手册</a></li>
@@ -58,23 +85,11 @@
 			<li><a href="http://gettingreal.37signals.com/GR_chn.php" target="_blank">连接：【Getting Real】中文版</a></li>
 			<li style="color:red">将来的最新更新版以及更多手册都会先发布于此，敬请关注！</li>
 		</ul>
-		  </nav>
+		</nav>
 	  </div>
 	</div><!-- /content -->
-
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-7540884532318361";
-/* ga1 */
-google_ad_slot = "9392777569";
-google_ad_width = 336;
-google_ad_height = 280;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
 	
-	<div data-role="footer" class="footer-docs ui-footer ui-bar-c" data-theme="c" role="contentinfo">
+	<div data-role="footer" class="footer-docs ui-footer" data-theme="d" role="contentinfo">
 		<p>© 2012 gotoREAL, LLC</p>
 		<p>wr3® and the gotoREAL logo are registered trademarks of gotoREAL, LLC</p>
 	</div>
